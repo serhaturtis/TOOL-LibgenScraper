@@ -28,9 +28,6 @@ def search_nonfiction(topic, count_limit):
 def search_articles(topic, count_limit):
     articles = lg.search_articles(
     topic,
-    filter={
-        lg.ArticlesColumns.LANGUAGE: r'English',
-    },
     limit=count_limit,
     libgen_mirror=LIBGEN_MIRROR,
 )
