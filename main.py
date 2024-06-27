@@ -76,9 +76,9 @@ def download_file(url, directory, filename=None):
     print(f"Downloaded file saved to {file_path}")
 
 def main():
-    search_topic = input("Topic:")
-    book_limit = int(input("Book Count:"))
-    article_limit = int(input("Article Count:"))
+    search_topic = input("Topic: ")
+    book_limit = int(input("Book Count: "))
+    article_limit = int(input("Article Count: "))
     nonfiction_results = search_nonfiction(search_topic, book_limit)
     articles_results = search_articles(search_topic, article_limit)
     
