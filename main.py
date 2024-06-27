@@ -39,7 +39,7 @@ def download_nonfiction(topic, search_results:lg.NonFictionResults):
     for i in range(len(search_results)):
         download_links = search_results.download_links(i, limit_mirrors=2)
         print("Downloading:" , search_results.id(i), " From: ", download_links[0])
-        download_file(download_links[0], save_directory, search_results.title(i))
+        download_file(download_links[0], save_directory, search_results.id(i))
 
 def download_article(topic, search_results:lg.ArticlesResults):
     save_directory = ensure_directory_exists(f'./downloads/{topic}/article')
